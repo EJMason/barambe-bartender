@@ -11,15 +11,19 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
   },
   "dependencies": {
+    "@types/seamless-immutable": "^7.1.1",
     "bulma": "^0.5.3",
     "global": "^4.3.2",
     "gulp": "^3.9.1",
     "node-sass-chokidar": "^0.0.3",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "2.7.0",
     "redux": "^3.7.2",
+    "reduxsauce": "^0.7.0",
+    "seamless-immutable": "^7.1.2",
     "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.74.2"
   },
@@ -28,6 +32,10 @@
     "@types/node": "^8.0.31",
     "@types/react": "^16.0.7",
     "@types/react-dom": "^15.5.4",
-    "@types/react-router-dom": "^4.0.8"
+    "@types/react-redux": "^5.0.9",
+    "@types/react-router-dom": "^4.0.8",
+    "@types/redux": "^3.6.0",
+    "@types/redux-logger": "^3.0.4",
+    "redux-logger": "^3.0.6"
   }
 }
