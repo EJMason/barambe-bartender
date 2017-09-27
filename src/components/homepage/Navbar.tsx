@@ -7,7 +7,7 @@ import {
   Visibility
 } from 'semantic-ui-react';
 
-import { MenuItems } from '../components';
+import { MenuItems } from './components';
 import tempLogo from '../../assets/tempLogo.svg';
 
 export interface ClassProps {
@@ -40,7 +40,9 @@ export default class Navbar extends React.Component<ClassProps, ClassState> {
         offScreen: false,
       },
     };
+
     this.handleItemClick = this.handleItemClick.bind(this);
+    this.handleUpdate = this.handleUpdate.bind(this);
   }
 
   componentDidMount() {
@@ -58,40 +60,27 @@ export default class Navbar extends React.Component<ClassProps, ClassState> {
     });
   }
 
-  handleUpdate = (e: any, obj: any) => this.setState({ calculations: obj.calculations });
+  handleUpdate(e: any, obj: any) {
+    this.setState({ calculations: obj.calculations });
+  }
 
   handleItemClick(e: React.MouseEvent<HTMLAnchorElement>, name: string): void {
     return this.setState({ activeItem: name });
   }
 
   render() {
-    const { activeItem, calculations } = this.state;
+    const { activeItem } = this.state;
     const menupass =  {activeItem, menuClick: this.handleItemClick };
+
     return (
       <div>
-        <Visibility onUpdate={this.handleUpdate}>
-          {calculations.width}
-        </Visibility>
-        <Menu stackable fixed={'top'}>
-          <Menu.Item children={<Image src={tempLogo} size="mini" />}/>
+        <Visibility onUpdate={this.handleUpdate} />
 
+        <Menu fixed={'top'}>
+
+          <Menu.Item children={<Image src={tempLogo} size="mini" />}/>
           {MenuItems(menupass)}
 
-          {/* <Menu.Item
-            name="home"
-            active={activeItem === 'home'}
-            onClick={(e) => this.handleItemClick(e, 'home')}
-          />
-          <Menu.Item
-            name="messages"
-            active={activeItem === 'messages'}
-            onClick={(e) => this.handleItemClick(e, 'messages')}
-          />
-          <Menu.Item
-            name="friends"
-            active={activeItem === 'friends'}
-            onClick={(e) => this.handleItemClick(e, 'friends')}
-          /> */}
           <Menu.Menu position="right">
             <Menu.Item
               name="Bar Portal"

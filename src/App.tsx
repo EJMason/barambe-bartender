@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { Home } from './homepage/Home';
+import Home from './components/homepage/Home';
 // import { Login } from './login/Login';
 
 import './App.css';
@@ -33,23 +33,5 @@ class App extends React.Component<AppProps, AppState> {
     );
   }
 }
-
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <div className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h2>Welcome to React</h2>
-//         </div>
-
-//         <Switch>
-//         <Route exact={true} path="/" component={Home}/>
-//         <Route path="/login" component={Login}/>
-//         </Switch>
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

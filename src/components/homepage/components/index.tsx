@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {
   Menu,
-  // Container,
 } from 'semantic-ui-react';
 
 export interface MenuProps {
@@ -18,11 +17,12 @@ export interface MenuProps {
  */
 export const MenuItems = (props: MenuProps) => {
   const routes = ['about', 'developers', 'technology', 'contact'];
-  return routes.map(name => (
+  return routes.map((name, i) => (
     <Menu.Item
       name={name}
       active={props.activeItem === name}
       onClick={props.menuClick}
+      key={`menu_${i}`}
     />
   ));
 };
