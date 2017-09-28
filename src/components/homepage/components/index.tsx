@@ -1,7 +1,9 @@
 import * as React from 'react';
 import {
   Menu,
+  Image,
 } from 'semantic-ui-react';
+import { assets } from '../../../assets';
 
 export interface MenuProps {
   activeItem: string;
@@ -26,3 +28,15 @@ export const MenuItems = (props: MenuProps) => {
     />
   ));
 };
+
+export const Banner = () => {
+  return (
+    <div>
+      <Image
+        src={assets.images.banner}
+        fluid
+      />
+    </div>
+  )
+
+}

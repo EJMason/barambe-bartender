@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import Navbar from './Navbar';
 import { CREATORS } from './home.duck';
+import  { Banner } from './components';
 
 interface Props {
   name?: string;
@@ -31,7 +32,8 @@ class Home extends React.Component<Props, State> {
     return (
       <div>
         <Navbar />
-        <h1>hello</h1>
+        <Banner />
+
         <p>{process.env.NODE_ENV}</p>
         <h1>{`TESTING REDUX: ${JSON.stringify(this.props.test)}`}</h1>
 
