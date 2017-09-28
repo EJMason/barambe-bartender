@@ -33,10 +33,6 @@ class Home extends React.Component<Props, State> {
       <div>
         <Navbar />
         <Banner />
-
-        <p>{process.env.NODE_ENV}</p>
-        <h1>{`TESTING REDUX: ${JSON.stringify(this.props.test)}`}</h1>
-
       </div>
     );
   }
