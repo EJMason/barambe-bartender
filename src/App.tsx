@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './components/homepage/Home';
-// import { Login } from './login/Login';
+import Home from './containers/homepage/Home';
+import Login from './containers/login/Login';
 
 import './App.css';
 
@@ -28,6 +28,7 @@ class App extends React.Component<AppProps, AppState> {
       <div className="App">
         <Switch>
           <Route exact={true} path="/" component={Home}/>
+          <Route path="/login" component={Login}/>
         </Switch>
       </div>
     );
