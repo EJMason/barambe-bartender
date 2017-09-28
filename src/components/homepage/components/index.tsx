@@ -38,7 +38,8 @@ export const Banner = () => {
         fluid
       />
         <h2 id="head">drinks out for</h2>
-        <h1 id="nuts"> BARAMBE </h1>
+        <h1 id="ttl"> BARAMBE </h1>
+        <p id="slogan">Some cool saying here cuz app is awesome</p>
     </div>
   );
 };
