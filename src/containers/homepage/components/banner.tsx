@@ -20,8 +20,10 @@ export default () => {
         <div className="img-trim2">
           <img className="banner-text" src={logoText} alt="Barambe"/>
         </div>
+        <p id="banner-slogan" className="">
+          Drink ordering from the future.
+        </p>
       </div>
-
     </div>
   );
 };

@@ -3,15 +3,32 @@
   border: 2px solid red;
 }
 
+// ---------- Outer Level ------------ //
+
 .banner-container {
   width: 100%;
   margin: 0 auto;
   max-height: 600px;
-  min-height:450px;
+  min-height:490px;
   overflow: hidden;
   position: relative;
 }
 
+// ---------- Slogan Stuff ----------- //
+#banner-slogan {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  font-family: $font-home;
+  font-weight: lighter;
+  font-size: 20px;
+  color: $color-offwhite;
+  @include media(">=1px", "<500px") {
+    font-size: 4vw;
+  };
+}
+
+// --------- Image Background --------- //
 
 .banner-overlay {
   background-color: $color-grey-dark;
@@ -24,12 +41,15 @@
 }
 
 .banner-image {
-  width: 120%;
-  min-height: 450px;
+  width: 140%;
+  min-height: 490px;
 }
+
+// -------- Logo Stuff --------- //
 
 .banner-logo-ctr {
   position: absolute;
+  // max-width: 440px;
   display: flex;
   // flex-flow: center;
   flex-wrap: wrap;
@@ -37,9 +57,15 @@
   justify-content: center;
   height: 30%;
   width: 60%;
-  top: 100px;
+  top: 190px;
   left: 50%;
   transform: translate(-50%, 0%);
+
+  @include media(">=1px", "<800px") {
+    // width: 200px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  };
 }
 
 .banner-logo {
@@ -53,11 +79,19 @@
 
 .img-trim {
   height: 100%;
-  // flex: 1 auto;
+
+  @include media(">=1px", "<800px") {
+    height: 80%;
+    margin-left: 0px;
+  };
 }
 
 .img-trim2 {
   height: 50%;
   margin-left: 50px;
-  // flex: 2 auto;
+
+  @include media(">=1px", "<800px") {
+    height: 30%;
+    margin-left: 0px;
+  };
 }

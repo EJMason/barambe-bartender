@@ -8,8 +8,8 @@ import registerServiceWorker from './registerServiceWorker';
 import { configureStore } from './redux/index';
 import App from './App';
 
-import './index.css';
-import 'semantic-ui-css/semantic.min.css';
+// import 'semantic-ui-css/semantic.min.css';
+import './styles/main.css';
 
 const baseRouter = (
   <Provider store={configureStore()}>
