@@ -4,8 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './containers/homepage/Home';
 import Login from './containers/login/Login';
 
-import './App.css';
-
 export interface AppProps {
   name?: string;
 }

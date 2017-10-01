@@ -3,7 +3,7 @@
  * -------------------------------------
  *
  */
-import '../login.css';
+
 import * as React from 'react';
 import tempLogo from '../../../assets/tempLogo.svg';
 import {

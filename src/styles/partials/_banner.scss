@@ -1,0 +1,63 @@
+// --------- Banner ------------- //
+.red-border{
+  border: 2px solid red;
+}
+
+.banner-container {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+  min-height:450px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.banner-overlay {
+  background-color: $color-grey-dark;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0.96;
+}
+
+.banner-image {
+  width: 120%;
+  min-height: 450px;
+}
+
+.banner-logo-ctr {
+  position: absolute;
+  display: flex;
+  // flex-flow: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 60%;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.banner-logo {
+  height: 100%;
+  right: 0px;
+}
+
+.banner-text {
+  height: 100%;
+}
+
+.img-trim {
+  height: 100%;
+  // flex: 1 auto;
+}
+
+.img-trim2 {
+  height: 50%;
+  margin-left: 50px;
+  // flex: 2 auto;
+}

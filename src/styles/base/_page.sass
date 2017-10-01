@@ -1,0 +1,22 @@
+///
+/// Basic Page sass file
+///
+///
+
+
+	// MSIE: Prevents scrollbar from overlapping content.
+body
+  -ms-overflow-style: scrollbar
+
+@include respond-to(xsmall)
+  html, body
+    min-width: 320px
+
+body
+  background: _palette(bg)
+  // Prevents animation/transition "flicker" on page load.
+  // Automatically added/removed by js/main.js.
+    &.is-loading
+      *, *:before, *:after
+        @include vendor('animation', 'none !important')
+        @include vendor('transition', 'none !important')

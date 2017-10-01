@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import { CREATORS } from './home.duck';
-import  { Banner, About } from './components';
+// import  { Banner, About } from './components';
+import Banner from './components/banner';
 
 interface Props {
   name?: string;
@@ -31,9 +32,7 @@ class Home extends React.Component<Props, State> {
   render() {
     return (
       <div>
-        <Navbar />
         <Banner />
-        <About />
       </div>
     );
   }
