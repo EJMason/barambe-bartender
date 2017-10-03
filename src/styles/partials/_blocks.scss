@@ -1,0 +1,26 @@
+///
+///
+///
+
+.home-block {
+
+  p, h1 {
+    @include Josefin-regular;
+    text-align: center;
+  }
+
+  h1 {
+    @include Josefin-thick;
+  }
+}
+
+#block-ctr {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#block-img {
+  height: 160px;
+  display: block;
+  margin: 0 auto;
+}

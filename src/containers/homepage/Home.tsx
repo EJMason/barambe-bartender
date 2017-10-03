@@ -6,6 +6,7 @@ import { CREATORS } from './home.duck';
 // import  { Banner, About } from './components';
 import Banner from './components/banner';
 import BodyOne from './components/body1';
+import Blocks from './components/bodyBlocks';
 
 interface Props {
   name?: string;
@@ -36,12 +37,16 @@ class Home extends React.Component<Props, State> {
       <div>
         {/* Top banner with barambe logo */}
         <Banner />
+        <Divider section hidden />
         <BodyOne />
         <Container>
           <Divider section hidden />
           <Divider section hidden />
           <Divider />
         </Container>
+        <Divider section hidden />
+        <Divider section hidden />
+        <Blocks />
       </div>
     );
   }
