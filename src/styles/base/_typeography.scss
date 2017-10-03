@@ -1,0 +1,83 @@
+
+
+// @font-face {
+//   font-family: 'Ostrich Sans';
+
+//   src: url('https://www.dropbox.com/s/p2x0w26ls0lswt6/ostrich-sans-regular.woff?dl=1') format('woff'),
+//   url('https://www.dropbox.com/s/bg52z0zzs09skyu/ostrich-sans-regular.ttf?dl=1') format('truetype'),
+//   url('https://www.dropbox.com/s/ffrtchb4toj5nj1/ostrich-sans-regular.svg?dl=1') format('svg');
+// }
+
+// @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600');
+
+
+// @mixin Ostrich-Regular {
+//   font-family: 'Ostrich Sans', sans-serif !important;
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@mixin Josefin-regular {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+@mixin Josefin-thick {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+/* =============================================================================================== */
+
+// body {
+//   @include Ubuntu-Regular;
+//   font-size: 100%;
+//   line-height: 1.4; }
+
+// .container {
+//   width: 40%;
+//   margin: 0 auto; }
+
+// h1, h2, h3 {
+//   @include Ubuntu-Bold;
+//   margin: 0; }
+
+.home-header {
+  @include Josefin-regular;
+  font-size: 2.2em;
+  text-align: center;
+  color: $color-red;
+  @include media(">=1px", "<800px") {
+    font-size: 1.7em;
+  };
+}
+
+// h2 {
+//   // @include Ostrich-Regular;
+//   font-family: 'Ostrich Sans' !important;
+//   font-size: 5em;
+// }
+
+// h3 {
+//   font-size: 1.2em; }
+
+// p {
+//   margin: 0 0 1em 0; }
+
+// strong {
+//   @include Ubuntu-Bold; }
+
+// em {
+//   @include Ubuntu-Regular-Italic; }
+
+// p.light {
+//   @include Ubuntu-Light;
+//   em { @include Ubuntu-Light-Italic; }
+// }
+
+// p.bold {
+//   @include Ubuntu-Bold;
+//   em { @include Ubuntu-Bold-Italic; }
+// }

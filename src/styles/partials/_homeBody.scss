@@ -1,0 +1,20 @@
+///
+///
+///
+
+.body-head {
+  margin-top: 50px !important;
+}
+
+.body1 {
+  @include Josefin-regular;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  @include media(">=1px", "<800px") {
+    width: 90%;
+  };
+  @include media(">=1200px", "<10000px") {
+    width: 800px;
+  };
+}

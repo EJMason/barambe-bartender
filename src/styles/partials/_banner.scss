@@ -49,9 +49,7 @@
 
 .banner-logo-ctr {
   position: absolute;
-  // max-width: 440px;
   display: flex;
-  // flex-flow: center;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -62,7 +60,6 @@
   transform: translate(-50%, 0%);
 
   @include media(">=1px", "<800px") {
-    // width: 200px;
     flex-wrap: nowrap;
     flex-direction: column;
   };
