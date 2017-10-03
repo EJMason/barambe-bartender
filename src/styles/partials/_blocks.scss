@@ -16,11 +16,45 @@
 
 #block-ctr {
   max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
+  @include media(">=1px", "<800px") {
+    width: 98%;
+  };
 }
 
 #block-img {
   height: 160px;
   display: block;
   margin: 0 auto;
+}
+
+// ------- app icons ------ //
+
+.app-icons {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // img {
+  //   width: 160px;
+  // }
+}
+
+#logo-android {
+  height: 50px;
+  margin-right: 40px;
+  @include media(">=1px", "<800px") {
+    margin-right: 10px;
+  };
+}
+
+#logo-apple {
+  height: 46px;
+  margin-left: 40px;
+  @include media(">=1px", "<800px") {
+    margin-right: 10px;
+  };
 }

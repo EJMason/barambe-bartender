@@ -7,6 +7,7 @@ import { CREATORS } from './home.duck';
 import Banner from './components/banner';
 import BodyOne from './components/body1';
 import Blocks from './components/bodyBlocks';
+import AppIcons from './components/appStore';
 
 interface Props {
   name?: string;
@@ -47,6 +48,7 @@ class Home extends React.Component<Props, State> {
         <Divider section hidden />
         <Divider section hidden />
         <Blocks />
+        <AppIcons />
       </div>
     );
   }
