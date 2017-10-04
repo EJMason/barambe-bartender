@@ -24,3 +24,36 @@ export const assets = {
     }
   }
 };
+
+export const developers = [
+    {
+      name: 'EJ Mason',
+      img: 'https://avatars2.githubusercontent.com/u/6167137?v=4&s=460',
+      links: {
+        github: 'https://github.com/ejmason',
+        linkedin: 'https://www.linkedin.com/in/eliotmason/',
+        stack: 'https://stackoverflow.com/users/3109222/ej-mason?tab=profile',
+        email: 'eliotjunior@gmail.com'
+      }
+    },
+    {
+      name: 'Andrew Tran',
+      img: 'https://avatars2.githubusercontent.com/u/18064859?v=4&s=460',
+      links: {
+        github: 'https://github.com/LeatherGreenGargoyle',
+        linkedin: 'https://www.linkedin.com/in/drewvtran/',
+        stack: '#',
+        email: '#'
+      }
+    },
+    {
+      name: 'Yuriy Lemberg',
+      img: 'https://avatars2.githubusercontent.com/u/5579150?v=4&s=460',
+      links: {
+        github: 'https://github.com/ylemberg',
+        linkedin: 'https://www.linkedin.com/in/yuriylemberg/',
+        stack: '#',
+        email: '#'
+      }
+    }
+  ];
