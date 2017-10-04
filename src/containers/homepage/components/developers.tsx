@@ -20,10 +20,12 @@ export default () => {
       <Divider hidden />
       <div className="devs-more-ctr">
         <div>
-          <p>Learn more about how we built the app</p>
+          <p>Read about how we built the app</p>
         </div>
         <Icon inverted circular color="yellow" name="right arrow" />
       </div>
+      <Divider section hidden />
+      <Divider section hidden />
       <Divider section hidden />
     </div>
   );

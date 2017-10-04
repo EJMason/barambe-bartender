@@ -9,6 +9,8 @@ import BodyOne from './components/body1';
 import Blocks from './components/bodyBlocks';
 import AppIcons from './components/appStore';
 import Developers from './components/developers';
+import BarApp from './components/bartenderApp';
+import Footer from './components/footer';
 
 interface Props {
   name?: string;
@@ -39,18 +41,31 @@ class Home extends React.Component<Props, State> {
       <div>
         {/* Top banner with barambe logo */}
         <Banner />
+
         <Divider section hidden />
+
+        {/* This is the first homepage info block */}
         <BodyOne />
+
         <Container>
           <Divider section hidden />
           <Divider section hidden />
           <Divider />
         </Container>
+
         <Divider section hidden />
         <Divider section hidden />
+
+        {/* Information about the mobile app */}
         <Blocks />
         <AppIcons />
+
+        {/* Section about the developers */}
         <Developers />
+
+        <BarApp />
+
+        <Footer />
       </div>
     );
   }

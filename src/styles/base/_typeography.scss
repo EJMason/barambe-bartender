@@ -54,6 +54,16 @@
   };
 }
 
+.home-header-grey {
+  @include Josefin-thick;
+  font-size: 2.2em;
+  text-align: center;
+  color: $color-grey;
+  @include media(">=1px", "<800px") {
+    font-size: 1.7em;
+  };
+}
+
 // h2 {
 //   // @include Ostrich-Regular;
 //   font-family: 'Ostrich Sans' !important;

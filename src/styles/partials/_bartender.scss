@@ -1,0 +1,56 @@
+///
+///
+///
+
+.bartender-ctr {
+  @include shadow;
+  position: relative;
+  padding-bottom: 60px;
+
+  p {
+    @include Josefin-regular;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+  }
+
+  h2 {
+    color: $color-grey;
+  }
+}
+
+.bartender-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  @include media(">=1px", "<600px") {
+    flex-direction: column-reverse;
+  };
+
+  img {
+    height: 250px;
+  }
+
+  div {
+    @include Josefin-regular;
+    // padding-right: 80px;
+    padding-left: 100px;
+
+    @include media(">=1px", "<600px") {
+      padding-right: 0px;
+      padding-left: 0px;
+      margin-top: 40px;
+    };
+  }
+}
+
+.btn-ctr {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 70%;
+  max-width: 800px;
+}
