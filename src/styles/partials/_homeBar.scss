@@ -1,0 +1,53 @@
+///
+/// Homepage Bar
+///
+.class-top-ctr {
+  position: relative;
+}
+
+.home-menu-ctr {
+  position: absolute;
+  margin: 0 auto;
+  top: 20px;
+  height: 50px;
+  width: 95%;
+}
+
+.fixer {
+  position: fixed;
+}
+
+.floating-btn {
+  z-index: 100;
+  right: 40px;
+  top: 5%;
+  @include media("<tablet") {
+    top: 90%;
+    right: 24px;
+  };
+}
+
+.bottom-btn {
+  z-index: 100;
+  bottom: 0px;
+  width: 100%;
+}
+
+.back {
+  z-index: 1;
+}
+
+.front {
+  z-index: 90;
+}
+
+.hider {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+  height: 50%;
+}

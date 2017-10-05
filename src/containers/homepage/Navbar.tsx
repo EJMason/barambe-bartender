@@ -1,17 +1,12 @@
-import { } from 'semantic-ui-react/src/collections/Menu/MenuItem';
 import * as React from 'react';
 import {
   Menu,
-  // Container,
-  Image,
-  Visibility
+  Button,
 } from 'semantic-ui-react';
 
-import { MenuItems } from './components';
-import tempLogo from '../../assets/tempLogo.svg';
-
-export interface ClassProps {
+export interface Props {
   name?: string;
+  fltBtn: any;
 }
 
 interface ClassState {
@@ -19,8 +14,8 @@ interface ClassState {
   calculations: interfaces.Semantic_Visiblity;
 }
 
-export default class Navbar extends React.Component<ClassProps, ClassState> {
-  constructor(props: ClassProps) {
+export default class Navbar extends React.Component<Props, ClassState> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       activeItem: 'home',
@@ -55,8 +50,8 @@ export default class Navbar extends React.Component<ClassProps, ClassState> {
       calculations: {
         ...this.state.calculations,
         height: window.innerHeight,
-        width: window.innerWidth
-      }
+        width: window.innerWidth,
+      },
     });
   }
 
@@ -69,24 +64,14 @@ export default class Navbar extends React.Component<ClassProps, ClassState> {
   }
 
   render() {
-    const { activeItem } = this.state;
-    const menupass =  {activeItem, menuClick: this.handleItemClick };
-
     return (
-      <div>
-        <Visibility onUpdate={this.handleUpdate} />
-
-        <Menu fixed={'top'}>
-
-          <Menu.Item children={<Image src={tempLogo} size="mini" />}/>
-          {MenuItems(menupass)}
-
-          <Menu.Menu position="right">
-            <Menu.Item
-              name="Bar Portal"
-              active={activeItem === 'portal'}
-              onClick={(e) => this.handleItemClick(e, 'portal')}
-            />
+      <div className="home-menu-ctr front">
+        <Menu inverted secondary>
+          <Menu.Menu color="red" position="right">
+            {/* <Menu.Item color="red" name="Bar Portal" /> */}
+            <Menu.Item name="About" />
+            <Menu.Item name="Developers" />
+            <Button inverted content="Bar Portal" icon="home" color="red"/>
           </Menu.Menu>
         </Menu>
       </div>
