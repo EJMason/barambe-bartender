@@ -18,7 +18,7 @@ export default (props: Props) => {
         <Motion style={{w: spring((25 * props.wiggle), { stiffness: 3, damping: 3 })}}>
         {(dt: any) =>
           <div
-            className="floating-btn fixer"
+            className="floating-btn fixer fade-in-fast one"
             style={{
                 WebkitTransform: `translate3d(${data.x + dt.w}px, 0, 0)`,
                 transform: `translate3d(${data.x + dt.w}px, 0, 0)`,
@@ -26,6 +26,7 @@ export default (props: Props) => {
           >
             <Button
               className="shadow"
+              size="large"
               color="red"
               inverted
             >

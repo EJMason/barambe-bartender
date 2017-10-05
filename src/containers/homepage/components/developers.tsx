@@ -11,7 +11,7 @@ import { developers } from '../../../assets';
 
 export default () => {
   return (
-    <div id="devs-container" className="back">
+    <div id="devs-container" className="back fade-in one">
       <h3>LEARN ABOUT THE DEVELOPERS</h3>
       <hr className="hr-divider" />
       <div className="dev-cards-ctr">

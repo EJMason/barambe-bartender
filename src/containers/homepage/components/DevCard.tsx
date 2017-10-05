@@ -10,6 +10,7 @@ interface Props {
   name: string;
   img: string;
   links: Links;
+  fade: string;
 }
 
 interface Links {
@@ -21,7 +22,7 @@ interface Links {
 
 export default (props: Props) => {
   return (
-    <div className="dev-card">
+    <div className={`dev-card fade-in ${props.fade}`}>
       <div id="card-body" className="">
         <div className="card-text">
           <h1>{props.name}</h1>

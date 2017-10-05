@@ -28,6 +28,7 @@ export const assets = {
 export const developers = [
     {
       name: 'EJ Mason',
+      fade: 'one',
       img: 'https://avatars2.githubusercontent.com/u/6167137?v=4&s=460',
       links: {
         github: 'https://github.com/ejmason',
@@ -38,6 +39,7 @@ export const developers = [
     },
     {
       name: 'Andrew Tran',
+      fade: 'two',
       img: 'https://avatars2.githubusercontent.com/u/18064859?v=4&s=460',
       links: {
         github: 'https://github.com/LeatherGreenGargoyle',
@@ -48,6 +50,7 @@ export const developers = [
     },
     {
       name: 'Yuriy Lemberg',
+      fade: 'three',
       img: 'https://avatars2.githubusercontent.com/u/5579150?v=4&s=460',
       links: {
         github: 'https://github.com/ylemberg',

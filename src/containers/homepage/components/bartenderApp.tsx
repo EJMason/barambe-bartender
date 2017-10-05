@@ -7,7 +7,7 @@ import { Divider, Header, Button } from 'semantic-ui-react';
 
 export default () => {
   return (
-    <div className="bartender-ctr">
+    <div className="bartender-ctr fade-in three">
       <h2 className="home-header-grey">BARTENDER CLIENT APPLICATION</h2>
       <Divider hidden />
       <p className="">

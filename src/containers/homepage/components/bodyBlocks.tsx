@@ -2,7 +2,6 @@
  * Body container item
  */
 
-import '../../../styles/main.css';
 import * as React from 'react';
 import { Grid } from 'semantic-ui-react';
 import gorilla from '../../../assets/grla.svg';
@@ -11,7 +10,7 @@ import armDrink from '../../../assets/armDrink.png';
 
 export const Block1 = () => {
   return (
-    <div className="home-block">
+    <div className="home-block fade-in-fast three">
       <img className="" id="block-img" src={phone} alt="Hand holding smartphone"/>
       <h1>Simple, easy to use</h1>
       <p>
@@ -24,7 +23,7 @@ export const Block1 = () => {
 
 export const Block2 = () => {
   return (
-    <div className="home-block">
+    <div className="home-block fade-in-fast three">
       <img className="" id="block-img" src={gorilla} alt="Gorilla"/>
       <h1>No more fighting to order</h1>
       <p>
@@ -38,7 +37,7 @@ export const Block2 = () => {
 
 export const Block3 = () => {
   return (
-    <div className="home-block">
+    <div className="home-block fade-in-fast three">
       <img className="" id="block-img" src={armDrink} alt="Hand holding drink"/>
       <h1>Focus on the fun part</h1>
       <p>

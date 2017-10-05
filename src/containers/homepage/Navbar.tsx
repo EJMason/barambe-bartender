@@ -65,7 +65,7 @@ export default class Navbar extends React.Component<Props, ClassState> {
 
   render() {
     return (
-      <div className="home-menu-ctr front">
+      <div className="home-menu-ctr front fade-in one">
         <Menu inverted secondary>
           <Menu.Menu color="red" position="right">
             {/* <Menu.Item color="red" name="Bar Portal" /> */}

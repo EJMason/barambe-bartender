@@ -12,7 +12,6 @@ import AppIcons from './components/appStore';
 import Developers from './components/developers';
 import BarApp from './components/bartenderApp';
 import Footer from './components/footer';
-
 import AnBtn from './components/ButtonAnimation';
 import BtBtn from './components/ButtonBottom';
 
