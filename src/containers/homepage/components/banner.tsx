@@ -5,7 +5,7 @@ import '../../../styles/main.css';
 import * as React from 'react';
 
 import { assets } from '../../../assets';
-import logoTxt from '../../../assets/logo_txt.png';
+import logoTxt from '../../../assets/logo_txt.svg';
 import logoImg from '../../../assets/logo_img.svg';
 
 export default () => {
