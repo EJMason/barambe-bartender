@@ -4,14 +4,11 @@
 
 import * as React from 'react';
 import { Grid } from 'semantic-ui-react';
-import gorilla from '../../../assets/grla.svg';
-import phone from '../../../assets/smartphone.svg';
-import armDrink from '../../../assets/armDrink.png';
 
 export const Block1 = () => {
   return (
     <div className="home-block fade-in-fast three">
-      <img className="" id="block-img" src={phone} alt="Hand holding smartphone"/>
+      <img className="" id="block-img" src="https://i.imgur.com/vQMXFZp.png" alt="Hand holding smartphone"/>
       <h1>Simple, easy to use</h1>
       <p>
         {'Once the app is downloaded, open a tab \
@@ -24,7 +21,7 @@ export const Block1 = () => {
 export const Block2 = () => {
   return (
     <div className="home-block fade-in-fast three">
-      <img className="" id="block-img" src={gorilla} alt="Gorilla"/>
+      <img className="" id="block-img" src="https://i.imgur.com/6kBM6B6.png" alt="Gorilla"/>
       <h1>No more fighting to order</h1>
       <p>
         {'Sick and tired of getting ignored or having to hound the \
@@ -38,7 +35,7 @@ export const Block2 = () => {
 export const Block3 = () => {
   return (
     <div className="home-block fade-in-fast three">
-      <img className="" id="block-img" src={armDrink} alt="Hand holding drink"/>
+      <img className="" id="block-img" src="https://i.imgur.com/72Qqewn.png" alt="Hand holding drink"/>
       <h1>Focus on the fun part</h1>
       <p>
         {'No matter the occasion we want to simplify your bar experience. \

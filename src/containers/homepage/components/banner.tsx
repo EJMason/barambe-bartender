@@ -3,9 +3,10 @@
  */
 import '../../../styles/main.css';
 import * as React from 'react';
+
 import { assets } from '../../../assets';
-import logo from '../../../assets/white_red_logo.svg';
-import logoText from '../../../assets/logo_txt.svg';
+import logoTxt from '../../../assets/logo_txt.svg';
+import logoImg from '../../../assets/logo_img.svg';
 
 export default () => {
   return (
@@ -15,10 +16,10 @@ export default () => {
 
       <div className="banner-logo-ctr">
         <div className="img-trim fade-in two">
-          <img className="banner-logo" src={logo} alt="Monkey with Sunglasses" />
+          <img className="banner-logo" src={logoImg} alt="Monkey with Sunglasses" />
         </div>
         <div className="img-trim2 fade-in three">
-          <img className="banner-text" src={logoText} alt="Barambe"/>
+          <img className="banner-text" src={logoTxt} alt="Barambe"/>
         </div>
         <p id="banner-slogan" className="fade-in long">
           Drink ordering from the future.

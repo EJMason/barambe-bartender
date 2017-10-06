@@ -4,6 +4,7 @@ export const assets = {
     banner: 'https://i.imgur.com/HnPsGrh.jpg',
     banner2: 'https://i.imgur.com/gZypt9Y.jpg',
     logo: 'https://i.imgur.com/mvywlbT.png',
+    logo_txt: 'https://i.imgur.com/FfvqpXF.png'
   },
   text: {
     about: {
